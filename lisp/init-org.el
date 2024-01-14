@@ -382,6 +382,8 @@ typical word processor."
       (sh . t) ;; obsolete
       (shell . t)
       (sql . t)
+      (mongo . t)
+      (rust . t)
       (sqlite . t)))))
 
 
