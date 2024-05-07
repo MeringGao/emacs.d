@@ -1,6 +1,17 @@
 ;;; init-rust.el --- Support for the Rust language -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
+;;; local.el
+
+(require-package 'lsp-mode)
+(require-package 'lsp-ui)
+(require-package 'iedit)
+
+(setq lsp-ui-doc-enable nil)
+(require-package 'helm-lsp)
+(require-package 'treemacs)
+(require-package 'yasnippet)
+(require-package 'yasnippet-snippets)
 
 (require-package 'rustic) 
 (setq rustic-format-on-save nil)
