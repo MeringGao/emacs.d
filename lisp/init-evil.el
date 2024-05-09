@@ -1,10 +1,9 @@
 (require-package 'window-numbering)
 (window-numbering-mode 1)
-(require-package 'ivy)
-(ivy-mode 1)
+;; (require-package 'ivy)
+;; (ivy-mode 1
 (require-package 'counsel-projectile)
 (counsel-projectile-mode 1)
-
 (require-package 'evil)
 
 
