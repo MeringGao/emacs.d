@@ -1,63 +1,31 @@
 ;;; local.el
 
-(require-package 'lsp-mode)
-(require-package 'lsp-ui)
-(require-package 'iedit)
-
-(setq lsp-ui-doc-enable nil)
-(require-package 'helm-lsp)
-(require-package 'treemacs)
-(require-package 'yasnippet)
-(require-package 'yasnippet-snippets)
-
 ;;(require-package 'web-mode)
-(require-package 'emmet-mode)
+;;(require-package 'emmet-mode)
 ;;(require-package 'vue-mode)
-(require-package 'yapfify)
-(require-package 'prettier)
-(require-package 'elpy)
-
-(setq company-minimum-prefix-length 1
-      company-idle-delay 0.0)
-(setq lsp-keymap-prefix "C-c l")
-(add-hook 'lsp-mode 'lsp-enable-which-key-integration)
-
-;;; python config
-;; pip install -U 'python-lsp-server[all]'
-
-(add-hook 'python-mode-hook #'lsp-deferred)
-(setq lsp-pylsp-plugins-flake8-enabled nil)
-(setq lsp-pyls-plugins-flake8-enabled nil)
-(setq lsp-pyls-plugins-pycodestyle-enabled t)
-(setq lsp-pylsp-plugins-pydocstyle-enabled t)
-(setq lsp-pylsp-plugins-pylint-enabled nil)
-(setq lsp-pyls-plugins-pylint-enabled t)
-
-(add-hook 'python-mode-hook 'yapf-mode)
-(add-hook 'python-mode-hook 'yas-minor-mode)
 
 ;;; html config
 
-(add-hook 'html-mode-hook #'lsp-deferred)
-(add-hook 'html-mode-hook 'emmet-mode)
+;; (add-hook 'html-mode-hook #'lsp-deferred)
+;; (add-hook 'html-mode-hook 'emmet-mode)
 ;; (add-hook 'html-mode-hook 'web-mode)
-(add-hook 'html-model-hook 'prettier-mode)
+;; (add-hook 'html-model-hook 'prettier-mode)
 ;;; css config
 
-(add-hook 'css-mode-hook #'lsp-deferred)
-(add-hook 'css-mode-hook 'emmet-mode)
-(add-hook 'css-mode-hook 'yas-minor-mode)
-(add-hook 'css-mode-hook 'prettier-mode)
-(add-hook 'scss-mode #'lsp-deferred)
+;; (add-hook 'css-mode-hook #'lsp-deferred)
+;; (add-hook 'css-mode-hook 'emmet-mode)
+;; (add-hook 'css-mode-hook 'yas-minor-mode)
+;; (add-hook 'css-mode-hook 'prettier-mode)
+;; (add-hook 'scss-mode #'lsp-deferred)
 
 ;;; typescript/javascript config
-(add-hook 'typescript-mode-hook #'lsp-deferred)
-(add-hook 'typescript-mode-hook 'prettier-mode)
-(add-hook 'typescript-mode-hook 'yas-minor-mode)
+;; (add-hook 'typescript-mode-hook #'lsp-deferred)
+;; (add-hook 'typescript-mode-hook 'prettier-mode)
+;; (add-hook 'typescript-mode-hook 'yas-minor-mode)
 
-(add-hook 'js-mode #'lsp-deferred)
-(add-hook 'js-mode 'prettier-mode)
-(add-hook 'js-mode 'yas-monir-mode)
+;; (add-hook 'js-mode #'lsp-deferred)
+;; (add-hook 'js-mode 'prettier-mode)
+;; (add-hook 'js-mode 'yas-monir-mode)
 ;; (add-hook 'vue-mode 'prettier-mode)
 ;; (add-hook 'vue-mode 'yas-minor-mode)
 ;; (add-hook 'vue-mode #'lsp-deferred)
@@ -129,7 +97,6 @@
 (setq custom-safe-themes t)
 (load-theme 'doom-one)
 
-
 ;; use org-bullets-mode for utf8 symbols as org bullets
 (require-package 'org-bullets)
 ;; make available "org-bullet-face" such that I can control the font size individually
@@ -166,7 +133,6 @@
 
 ;;; org-mode 下 python 运行报编码错误，加上 :preamble "# -*- coding: utf-8 -*-"
 
-
 (setq image-types  '(png gif tiff jpeg xpm xbm pbm webp))
 
 (imagemagick-register-types)
@@ -193,7 +159,6 @@
 
 ;;; 图形化界面 yank 乱码
 (setenv "LANG" "en_US.UTF-8")
-
 
 (setq projectile-project-search-path '("~/projects/"))
 
@@ -225,6 +190,6 @@
       (process-send-string proc text)
       (process-send-eof proc))))
 
-(setq interprogram-cut-function 'paste-to-osx)
-(setq interprogram-paste-function 'copy-from-osx)
+;; (setq interprogram-cut-function 'paste-to-osx)
+;; (setq interprogram-paste-function 'copy-from-osx)
 (provide 'init-local)

@@ -21,6 +21,7 @@
       (restclient-mode)
       (pop-to-buffer (current-buffer)))))
 
+(require-package 'restclient-jq)
 
 (provide 'init-http)
 ;;; init-http.el ends here

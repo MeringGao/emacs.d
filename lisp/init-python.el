@@ -30,5 +30,13 @@
 (when (maybe-require-package 'reformatter)
   (reformatter-define black :program "black" :args '("-")))
 
+;;; pip install ruff-lsp
+
+(add-hook 'python-mode-hook 'lsp-mode)
+(add-hook 'python-mode-hook 'ruff-format-on-save-mode)
+(add-hook 'python-mode-hook 'yas-minor-mode)
+
+(require-package 'elpy)
+
 (provide 'init-python)
 ;;; init-python.el ends here

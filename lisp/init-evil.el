@@ -1,12 +1,10 @@
-(require-package 'window-numbering)
-(window-numbering-mode 1)
 (require-package 'ivy)
 (ivy-mode 1)
 (require-package 'counsel-projectile)
 (counsel-projectile-mode 1)
 
 (require-package 'evil)
-
+(require-package 'evil-multiedit)
 
 (require-package 'evil-collection)
 
@@ -29,10 +27,10 @@
   "4" 'delete-window
   "o" 'switch-window
 
-  "pf1" 'consult-projectile-find-file
-  "pf3" 'consult-projectile-find-file-other-window
+  "pf1" 'projectile-find-file
+  "pf3" 'projectile-find-file-other-window
   "pp" 'projectile-switch-project
-  "ps" 'projectile-grep
+  "ps" 'projectile-ripgrep
   "prs" 'projectile-replace
   "pre" 'projectile-replace-regexp
 
@@ -66,6 +64,7 @@
   "df" 'treemacs-delete-file
   "oh" 'treemacs-visit-node-horizontal-split
   "yf" 'treemacs-copy-file
+  "g" 'treemacs-refresh
   )
 
 
