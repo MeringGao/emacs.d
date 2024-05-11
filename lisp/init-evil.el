@@ -2,7 +2,6 @@
 (ivy-mode 1)
 (require-package 'counsel-projectile)
 (counsel-projectile-mode 1)
-
 (require-package 'evil)
 (require-package 'evil-multiedit)
 

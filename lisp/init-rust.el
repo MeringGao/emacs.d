@@ -1,6 +1,7 @@
 ;;; init-rust.el --- Support for the Rust language -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
+;;; local.el
 
 (require-package 'rustic)
 (setq rustic-format-on-save nil)
