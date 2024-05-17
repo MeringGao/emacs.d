@@ -93,7 +93,7 @@
 (require 'init-projectile)
 
 (require 'init-lsp)
-
+(require 'init-go)
 (require 'init-compile)
 (require 'init-crontab)
 ;;(require 'init-textile)
@@ -189,7 +189,7 @@
 
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
-(require 'init-evil nil t)
+;;(require 'init-evil nil t)
 (provide 'init)
 
 ;; Local Variables:

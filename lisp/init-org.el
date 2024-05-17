@@ -383,6 +383,9 @@ typical word processor."
       (shell . t)
       (sql . t)
       (mongo . t)
+      (go . t)
+      (http . t)
+      (rustic . t)
       (rust . t)
       (sqlite . t)))))
 
