@@ -66,5 +66,9 @@
   "g" 'treemacs-refresh
   )
 
+;;; treemacs 中绑定特殊按键
+(evil-define-key 'normal org-mode-map
+  (kbd "TAB") 'org-cycle
+  )
 
 (provide 'init-evil)
