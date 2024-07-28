@@ -10,7 +10,7 @@
 ;;     #+FILETAGS: INBOX
 
 ;; and then set this file as `org-default-notes-file'.  Captured org
-;; items will then go into this file with the file-level tag, and can
+n;; items will then go into this file with the file-level tag, and can
 ;; be refiled to other locations as necessary.
 
 ;; Those other locations are generally other org files, which should
@@ -53,6 +53,15 @@
 
 
 ;; Lots of stuff from http://doc.norang.ca/org-mode.html
+
+(add-hook 'org-mode-hook 'auto-fill-mode)
+
+;; 添加一个钩子函数到 Org-mode
+(defun my-org-mode-setup ()
+  "Custom configurations for org-mode."
+  (setq fill-column 120))
+
+(add-hook 'org-mode-hook 'my-org-mode-setup)
 
 ;; Re-align tags when window shape changes
 (with-eval-after-load 'org-agenda
