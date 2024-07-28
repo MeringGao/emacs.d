@@ -4,6 +4,7 @@
 ;;; local.el
 
 (require-package 'rustic)
+(require-package 'cargo)
 (setq rustic-format-on-save nil)
 (setq rustic-format-trigger 'on-save)
 (defun rk/rustic-mode-hook () (when buffer-file-name (setq-local buffer-save-without-query t))
@@ -40,6 +41,6 @@
 ;;          :target nil
 ;;          :cwd nil)))
 
-(provide 'init-rust) 
+(provide 'init-rust)
 
 ;;; init-rust.el ends here

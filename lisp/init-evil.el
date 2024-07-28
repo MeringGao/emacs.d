@@ -1,5 +1,11 @@
 (require-package 'ivy)
+(require-package 'counsel)
 (ivy-mode 1)
+(counsel-mode 1)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(savehist-mode 1)
+(setq savehist-additional-variables '(extended-command-history))
+
 (require-package 'counsel-projectile)
 (counsel-projectile-mode 1)
 (require-package 'evil)
