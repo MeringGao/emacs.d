@@ -194,4 +194,5 @@
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
 )
+(global-display-fill-column-indicator-mode)
 (provide 'init-local)
