@@ -10,7 +10,7 @@
 ;;     #+FILETAGS: INBOX
 
 ;; and then set this file as `org-default-notes-file'.  Captured org
-n;; items will then go into this file with the file-level tag, and can
+;; items will then go into this file with the file-level tag, and can
 ;; be refiled to other locations as necessary.
 
 ;; Those other locations are generally other org files, which should
