@@ -195,4 +195,8 @@
 (setq interprogram-paste-function 'copy-from-osx)
 )
 (global-display-fill-column-indicator-mode)
+
+(require-package 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 (provide 'init-local)
