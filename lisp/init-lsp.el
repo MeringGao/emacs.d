@@ -8,6 +8,19 @@
 (setq lsp-inlay-hint-enable t)
 
 
+;; Enable inline hints for variable types
+(setq lsp-lens-enable t)
+(setq lsp-ui-sideline-enable t)
+(setq lsp-ui-sideline-show-hover t)
+(setq lsp-ui-sideline-show-code-actions t)
+
+;; Additional configuration for inline hints
+(setq lsp-ui-sideline-show-symbol t)
+(setq lsp-ui-sideline-show-hover t)
+(setq lsp-ui-sideline-delay 0.05)
+(setq lsp-ui-sideline-ignore-duplicate t)
+
+
 (setq company-minimum-prefix-length 1 company-idle-delay 0.5) ;; default is 0.2
 
 (require-package 'yasnippet)

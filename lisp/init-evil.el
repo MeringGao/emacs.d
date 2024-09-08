@@ -56,6 +56,7 @@
   "b3" 'find-file-other-window
   "bb" 'switch-to-buffer
   "bd" 'kill-buffer
+  "b4" 'kill-buffer-and-window
   )
 
 
