@@ -1,6 +1,7 @@
 (require-package 'lsp-mode)
 (require-package 'lsp-ui)
 (require-package 'lsp-treemacs)
+(require-package 'dap-mode)
 
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
 (setq lsp-eldoc-render-all t)

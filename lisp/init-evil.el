@@ -57,6 +57,18 @@
   "bb" 'switch-to-buffer
   "bd" 'kill-buffer
   "b4" 'kill-buffer-and-window
+
+  "dbd" 'dap-breakpoint-delete
+  "dba" 'dap-breakpoint-add
+  "dd"  'dap-debug
+  "dn"  'dap-next
+  "dsi" 'dap-step-in
+  "dso" 'dap-step-out
+  "dc"  'dap-continue
+  "dx" 'dap-disconnect
+  "der" 'dap-eval-region
+  "dep" 'dap-eval-thing-at-point
+  "dee" 'dap-eval
   )
 
 
