@@ -28,6 +28,30 @@
   (require 'dap-dlv-go)
   )
 
+(require-package 'protobuf-mode)
+(require-package 'clang-format+)
+
+(add-hook 'protobuf-mode 'lsp-deferred)
+(add-hook 'protobuf-mode 'company-mode)
+;; go install github.com/bufbuild/buf-language-server/cmd/bufls@latest
+;; go install github.com/bufbuild/buf/cmd/buf@latest
+;; 还需要安装 clang-format
+;; .clang-format 文件内容
+;; BasedOnStyle: Google
+;; IndentWidth: 2
+;; ColumnLimit: 0
+;; BreakBeforeBraces: Allman
+;; AllowShortFunctionsOnASingleLine: None
+;; AlignConsecutiveAssignments: true
+;; AlignConsecutiveDeclarations: true
+;; AlignTrailingComments: true
+
+(use-package clang-format
+  :ensure t
+  :hook (protobuf-mode . (lambda ()
+                           (add-hook 'before-save-hook 'clang-format-buffer nil 'local))))
+
+(setq clang-format-style-option "file")
 
 ;; (use-package dap-mode
 ;;   :ensure t
