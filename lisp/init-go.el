@@ -31,8 +31,8 @@
 (require-package 'protobuf-mode)
 (require-package 'clang-format+)
 
-(add-hook 'protobuf-mode 'lsp-deferred)
-(add-hook 'protobuf-mode 'company-mode)
+(add-hook 'protobuf-mode-hook 'lsp-deferred)
+(add-hook 'protobuf-mode-hook 'company-mode)
 ;; go install github.com/bufbuild/buf-language-server/cmd/bufls@latest
 ;; go install github.com/bufbuild/buf/cmd/buf@latest
 ;; 还需要安装 clang-format
