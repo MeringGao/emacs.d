@@ -8,6 +8,6 @@
     (add-to-list 'whitespace-cleanup-mode-ignore-modes 'markdown-mode)))
 
 (require-package 'markdown-preview-mode)
-(add-hook 'makrdown-mode-hook 'gfm-view-mode)
+(add-hook 'markdown-mode-hook 'gfm-view-mode)
 (provide 'init-markdown)
 ;;; init-markdown.el ends here
