@@ -127,6 +127,7 @@
 (maybe-require-package 'nginx-mode)
 ;;(maybe-require-package 'just-mode)
 ;;(maybe-require-package 'justl)
+(require 'init-grpc)
 
 (require 'init-paredit)
 (require 'init-lisp)

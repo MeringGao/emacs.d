@@ -396,6 +396,7 @@ typical word processor."
       (http . t)
       (rustic . t)
       (rust . t)
+      (grpc . t)
       (sqlite . t)))))
 
 
