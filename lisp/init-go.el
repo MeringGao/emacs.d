@@ -11,7 +11,7 @@
   (add-hook 'before-save-hook #'lsp-format-buffer nil t)
   (add-hook 'before-save-hook #'lsp-organize-imports nil t))
 
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+;;(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 (add-hook 'go-mode-hook 'lsp-deferred)
 (add-hook 'go-mode-hook 'yas-minor-mode)
 (add-hook 'go-mode-hook 'display-line-numbers-mode)
@@ -35,6 +35,10 @@
 (add-hook 'protobuf-mode-hook 'company-mode)
 ;; go install github.com/bufbuild/buf-language-server/cmd/bufls@latest
 ;; go install github.com/bufbuild/buf/cmd/buf@latest
+;; go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+;; go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+;; sudo yum install protobuf-compiler
+;;
 ;; 还需要安装 clang-format
 ;; .clang-format 文件内容
 ;; BasedOnStyle: Google

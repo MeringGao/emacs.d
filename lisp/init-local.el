@@ -95,7 +95,7 @@
 (require-package 'doom-themes)
 
 (setq custom-safe-themes t)
-(load-theme 'doom-one)
+;;(load-theme 'doom-one)
 
 ;; use org-bullets-mode for utf8 symbols as org bullets
 (require-package 'org-bullets)
