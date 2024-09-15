@@ -37,6 +37,7 @@
 ;; go install github.com/bufbuild/buf/cmd/buf@latest
 ;; go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 ;; go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+;; go get golang.org/x/tools/cmd/goimports@latest
 ;; sudo yum install protobuf-compiler
 ;;
 ;; 还需要安装 clang-format
