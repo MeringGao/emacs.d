@@ -189,6 +189,7 @@
 (require 'init-locales)
 
 ;; Allow users to provide an optional "init-local" containing personal settings
+(require 'init-treemacs nil t)
 (require 'init-local nil t)
 (require 'init-evil nil t)
 (provide 'init)
