@@ -1,7 +1,6 @@
 # -*- mode: snippet -*-
-# name: func main()
-# condition: (progn (forward-line 0) (not (and (eq (point-min) (point)) (looking-at-p "pack"))))
-# key: main
+# name: new-package
+# key: pack
 # --
 package ${1:main}
 
