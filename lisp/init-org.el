@@ -369,6 +369,7 @@ typical word processor."
     (define-key org-mode-map (kbd "C-c g") 'grab-mac-link)))
 
 (with-eval-after-load 'org
+  (setq fill-column 120)
   (org-babel-do-load-languages
    'org-babel-load-languages
    (seq-filter
