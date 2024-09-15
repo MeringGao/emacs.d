@@ -58,13 +58,13 @@
 
 (setq clang-format-style-option "file")
 
-;; (use-package dap-mode
-;;   :ensure t
-;;   :config
-;;   (require 'dap-go)
-;;   (dap-go-setup)
-;;   )
+;; 这里是为了方便在 org-mode 下编写 go 代码
+(require-package 'company-go)
+;; (with-eval-after-load 'go-mode
+;;   (require 'company-go)
+;;   (add-hook 'go-mode-hook
+;;             (lambda ()
+;;               (set (make-local-variable 'company-backends) '(company-go))
+;;               (company-mode))))
 
-;; (setq lsp-gopls-server-path "gopls")
-;; (setq dap-go-debug-program `("dlv" "dap" "-l" "127.0.0.1:38697"))
 (provide 'init-go)
