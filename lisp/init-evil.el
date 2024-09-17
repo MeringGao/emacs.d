@@ -2,7 +2,8 @@
 (require-package 'counsel)
 (ivy-mode 1)
 (counsel-mode 1)
-(global-set-key (kbd "M-x") 'counsel-M-x)
+;;(global-set-key (kbd "M-x") 'counsel-M-x)
+(require-package 'amx)
 (savehist-mode 1)
 (setq savehist-additional-variables '(extended-command-history))
 
