@@ -91,4 +91,9 @@
   (kbd "TAB") 'org-cycle
   )
 
+(setq savehist-file "~/.emacs.d/savehist")
+(savehist-mode 1)
+(setq history-length 1000)
+(setq savehist-additional-variables '(ivy-history))
+
 (provide 'init-evil)

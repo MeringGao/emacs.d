@@ -67,4 +67,16 @@
 ;;               (set (make-local-variable 'company-backends) '(company-go))
 ;;               (company-mode))))
 
+(defun gofmt-and-untabify-buffer ()
+  "Format the entire buffer with gofmt and then untabify."
+  (interactive)
+  (when (eq major-mode 'go-mode)
+    (let ((buf (current-buffer)))
+      ;; Run gofmt
+      (shell-command-on-region (point-min) (point-max) "gofmt" buf t)
+      ;; Untabify the buffer
+      (untabify (point-min) (point-max)))))
+
+(global-set-key (kbd "C-c g") 'gofmt-and-untabify-buffer)
+
 (provide 'init-go)
