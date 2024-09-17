@@ -57,6 +57,7 @@
   "bb" 'switch-to-buffer
   "bd" 'kill-buffer
   "b4" 'kill-buffer-and-window
+  "bi" 'ibuffer
 
   "dbd" 'dap-breakpoint-delete
   "dba" 'dap-breakpoint-add
