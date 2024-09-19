@@ -59,13 +59,14 @@
 (setq clang-format-style-option "file")
 
 ;; 这里是为了方便在 org-mode 下编写 go 代码
+;; go install github.com/mdempsky/gocode@latest
 (require-package 'company-go)
-;; (with-eval-after-load 'go-mode
-;;   (require 'company-go)
-;;   (add-hook 'go-mode-hook
-;;             (lambda ()
-;;               (set (make-local-variable 'company-backends) '(company-go))
-;;               (company-mode))))
+(with-eval-after-load 'go-mode
+  (require 'company-go)
+  (add-hook 'go-mode-hook
+            (lambda ()
+              (set (make-local-variable 'company-backends) '(company-go))
+              (company-mode))))
 
 (defun gofmt-and-untabify-buffer ()
   "Format the entire buffer with gofmt and then untabify."
