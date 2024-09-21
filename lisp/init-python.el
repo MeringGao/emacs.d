@@ -35,7 +35,7 @@
 (add-hook 'python-mode-hook 'lsp-mode)
 (add-hook 'python-mode-hook 'ruff-format-on-save-mode)
 (add-hook 'python-mode-hook 'yas-minor-mode)
-(add-hook 'python-mode-hook 'yapf-mode)
+;; (add-hook 'python-mode-hook 'yapf-mode)
 (require-package 'elpy)
 
 (provide 'init-python)
