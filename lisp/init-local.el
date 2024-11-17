@@ -199,4 +199,7 @@
 (require-package 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
+(setq-default display-fill-column-indicator-character ?\u2502)
+
 (provide 'init-local)
