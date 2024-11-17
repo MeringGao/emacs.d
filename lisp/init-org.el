@@ -59,7 +59,7 @@
 ;; 添加一个钩子函数到 Org-mode
 (defun my-org-mode-setup ()
   "Custom configurations for org-mode."
-  (setq fill-column 120))
+  (setq fill-column 80))
 
 (add-hook 'org-mode-hook 'my-org-mode-setup)
 
