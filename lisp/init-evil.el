@@ -71,6 +71,8 @@
   "der" 'dap-eval-region
   "dep" 'dap-eval-thing-at-point
   "dee" 'dap-eval
+
+  "kb" 'kubed-transient
   )
 
 
@@ -96,5 +98,5 @@
 (savehist-mode 1)
 (setq history-length 1000)
 (setq savehist-additional-variables '(ivy-history))
-
+(keymap-global-set "C-c k" 'kubed-prefix-map)
 (provide 'init-evil)

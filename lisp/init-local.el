@@ -130,6 +130,7 @@
 ;;; M-x customize-facs RET org-table
 ;;; 字体设置 Sarasa Mono Slab SC
 (set-face-attribute 'default nil :font "PT Mono" :height 150)
+(set-face-attribute 'default nil :font "JetBrains Mono" :height 150)
 
 ;;; org-mode 下 python 运行报编码错误，加上 :preamble "# -*- coding: utf-8 -*-"
 
